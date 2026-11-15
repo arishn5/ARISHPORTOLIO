@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arish | Aspiring Data Analyst & Data Science Enthusiast</title>
+<meta name="description" content="Portfolio of Arish, B.Tech IT 2026 graduate with Data Analytics training, learning Data Science. SQL, Python, Power BI and Machine Learning.">
+<meta property="og:title" content="Arish | Transforming Data Into Intelligence">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04060f;--bg2:#0b1233;--tx:#e8f0ff;--mut:#a3b3d6;--c1:#22e5ff;--c2:#3b82ff;--c3:#a855f7;--glass:rgba(255,255,255,.05);--bd:rgba(255,255,255,.13);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f2f5ff;--bg2:#dfe7ff;--tx:#0b1230;--mut:#40507a;--c1:#0a7f99;--c2:#2352d8;--c3:#7a2fd0;--glass:rgba(255,255,255,.75);--bd:rgba(20,40,120,.16);color-scheme:light}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px;height:100%}
+body{margin:0;background:radial-gradient(1200px 700px at 80% -10%,var(--bg2),var(--bg));background-color:var(--bg);color:var(--tx);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--c1);outline-offset:3px}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#glow{position:fixed;width:340px;height:340px;margin:-170px 0 0 -170px;border-radius:50%;background:radial-gradient(circle,rgba(34,229,255,.16),transparent 65%);pointer-events:none;z-index:1;display:none}
+@media (hover:hover) and (pointer:fine){#glow{display:block}}
+#loader{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;text-align:center;transition:opacity .6s,visibility .6s;cursor:pointer}
+#loader.off{opacity:0;visibility:hidden}
+.ring{width:84px;height:84px;margin:0 auto 18px;border-radius:50%;border:2px solid transparent;border-top-color:var(--c1);border-right-color:var(--c3);animation:spin 1s linear infinite}
+.bar{width:180px;height:3px;background:var(--bd);margin:12px auto 0;border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--c1),var(--c3));animation:load 1.5s ease forwards}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes load{to{width:100%}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backdrop-filter:blur(16px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--bd)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:49;background:var(--bg)}
+.nav{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font:800 1.2rem Sora,sans-serif;text-decoration:none;background:linear-gradient(90deg,var(--c1),var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.links{display:flex;gap:4px;flex-wrap:wrap}
+.links a{padding:6px 12px;border-radius:99px;text-decoration:none;color:var(--mut);font-size:.92rem;transition:.2s}
+.links a:hover,.links a.act{color:var(--tx);background:var(--glass);box-shadow:inset 0 0 0 1px var(--bd)}
+#menu{display:none;background:var(--glass);border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:8px 12px;font:inherit;cursor:pointer}
+@media (max-width:820px){#menu{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;padding:12px 20px;background:var(--bg);border-bottom:1px solid var(--bd)}.links.open{display:flex}}
+main,footer{position:relative;z-index:2}
+section{max-width:1120px;margin:auto;padding:88px 20px 24px}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;margin-bottom:12px}
+.sub{color:var(--mut);max-width:62ch;margin:0 0 36px}
+.hero{min-height:calc(100svh - 60px);display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;padding-top:40px}
+@media (max-width:900px){.hero{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2.6rem,7.2vw,5.4rem);font-weight:800;letter-spacing:-.03em}
+.grad{background:linear-gradient(100deg,var(--c1),var(--c2) 45%,var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hi{font:500 1.25rem Sora,sans-serif;color:var(--c1);margin:0 0 10px}
+.tag{font-size:1.15rem;color:var(--mut);margin:20px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;font:600 .95rem Sora,sans-serif;text-decoration:none;border:1px solid var(--bd);background:var(--glass);color:var(--tx);cursor:pointer;transition:.25s}
+.btn:hover{transform:translateY(-2px);border-color:var(--c1);box-shadow:0 0 24px rgba(34,229,255,.3)}
+.btn.p{background:linear-gradient(100deg,var(--c1),var(--c2));color:#021024;border:0}
+.orbwrap{position:relative;aspect-ratio:1;max-width:420px;width:100%;margin:auto;display:grid;place-items:center}
+.orb{width:46%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--c1) 22%,var(--c2) 55%,var(--c3) 100%);box-shadow:0 0 80px rgba(34,229,255,.55),0 0 160px rgba(168,85,247,.35);animation:pulse 4s ease-in-out infinite}
+.o{position:absolute;inset:0;border-radius:50%;border:1px solid var(--bd);animation:spin 18s linear infinite}
+.o:nth-child(2){inset:9%;border-color:rgba(168,85,247,.5);animation-duration:26s;animation-direction:reverse;transform:rotateX(65deg)}
+.o:nth-child(3){inset:-4%;border-style:dashed;animation-duration:40s}
+.o b{position:absolute;top:-6px;left:50%;width:12px;height:12px;border-radius:50%;background:var(--c1);box-shadow:0 0 16px var(--c1)}
+.chip{position:absolute;padding:6px 12px;border-radius:99px;background:var(--glass);border:1px solid var(--bd);backdrop-filter:blur(8px);font:600 .8rem Sora,sans-serif;animation:float 5s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.06)}}@keyframes float{50%{transform:translateY(-10px)}}
+.card{background:var(--glass);border:1px solid var(--bd);border-radius:20px;padding:24px;backdrop-filter:blur(14px)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.two{display:grid;gap:20px;grid-template-columns:1fr 1fr}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.skill{position:relative;overflow:hidden;transition:.3s}
+.skill:hover{transform:translateY(-4px);border-color:var(--c1)}
+.skill::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--c1),var(--c3));transition:width .6s}
+.skill.in::after{width:100%}
+.skill h3{font-size:1.05rem;margin-bottom:6px}
+.skill small,.meta{color:var(--mut);font-size:.85rem}
+.ph{display:inline-block;border:1px dashed var(--c3);border-radius:8px;padding:1px 8px;color:var(--mut);font-size:.88em}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.chips button{background:var(--glass);border:1px solid var(--bd);color:var(--mut);padding:7px 16px;border-radius:99px;font:inherit;cursor:pointer}
+.chips button[aria-pressed=true]{color:#021024;background:var(--c1);border-color:var(--c1)}
+.proj{cursor:pointer;text-align:left;font:inherit;color:inherit;transition:.3s;width:100%}
+.proj:hover{transform:translateY(-4px);border-color:var(--c3);box-shadow:0 0 30px rgba(168,85,247,.25)}
+.proj h3{font-size:1.2rem;margin:8px 0}
+.kind{color:var(--c1);font-size:.85rem}
+#viz{width:100%;max-width:520px;margin:auto;display:block}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:760px){.dash{grid-template-columns:1fr}}
+.kpi b{display:block;font:800 1.7rem Sora,sans-serif}
+.bars{display:flex;align-items:flex-end;gap:8px;height:120px}
+.bars i{flex:1;border-radius:6px 6px 0 0;background:linear-gradient(var(--c1),var(--c3));height:var(--h);transform-origin:bottom;animation:grow 1.2s ease both}
+@keyframes grow{from{transform:scaleY(0)}}
+.cert{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;border-style:dashed}
+.tl{border-left:2px solid var(--c2);padding-left:22px;display:grid;gap:14px}
+dl{margin:0;display:grid;gap:10px}dt{color:var(--c1);font-weight:500}dd{margin:0}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+footer{max-width:1120px;margin:60px auto 0;padding:28px 20px 40px;border-top:1px solid var(--bd);display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;color:var(--mut);font-size:.9rem}
+dialog{width:min(680px,92vw);max-height:86vh;overflow:auto;background:var(--bg2);color:var(--tx);border:1px solid var(--c3);border-radius:22px;padding:28px}
+dialog::backdrop{background:rgba(2,6,20,.7);backdrop-filter:blur(4px)}
+#fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;gap:8px;align-items:center;padding:12px 18px;border-radius:99px;border:0;font:600 .95rem Sora,sans-serif;color:#021024;background:linear-gradient(100deg,var(--c1),var(--c3));cursor:pointer;box-shadow:0 0 30px rgba(34,229,255,.4)}
+#chat{position:fixed;right:18px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:60;width:min(380px,calc(100vw - 36px));height:min(520px,70vh);display:none;flex-direction:column;background:var(--bg2);border:1px solid var(--bd);border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+#chat.open{display:flex}
+#chat header{position:static;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:var(--glass)}
+.demo{font-size:.75rem;color:#ffd666;padding:6px 16px;border-bottom:1px solid var(--bd)}
+#log{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:86%;padding:9px 13px;border-radius:14px;font-size:.92rem}
+.m.b{background:var(--glass);border:1px solid var(--bd)}.m.u{align-self:flex-end;background:var(--c2);color:#fff}
+#sug{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 8px}
+#sug button{font:inherit;font-size:.8rem;background:none;border:1px solid var(--bd);color:var(--mut);padding:4px 10px;border-radius:99px;cursor:pointer}
+#cf{display:flex;gap:8px;padding:10px;border-top:1px solid var(--bd)}
+#cf input{flex:1;min-width:0;background:var(--glass);border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:9px 12px;font:inherit}
+#toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--bg2);border:1px solid var(--c1);padding:10px 18px;border-radius:12px;z-index:90;display:none;max-width:90vw}
+.f{display:grid;gap:4px;margin:10px 0;font-size:.9rem;color:var(--mut)}.f input{background:var(--glass);border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:9px 12px;font:inherit}.f textarea{background:var(--glass);border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:9px 12px;font:inherit;resize:vertical}.f select{background:var(--bg2);border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:9px 12px;font:inherit}.ci{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="loader" role="status" aria-label="Loading"><div><div class="ring"></div><div class="grad" style="font:800 1.3rem Sora,sans-serif">Initializing Arish.AI</div><div class="bar"><i></i></div></div></div>
+<canvas id="bg" aria-hidden="true"></canvas><div id="glow" aria-hidden="true"></div>
+<header><div class="nav"><a class="logo" href="#home">Arish.</a><button id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<nav class="links" id="links" aria-label="Main"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#dashboard">Dashboard</a><a href="#internship">Internship</a><a href="#education">Education</a><a href="#certs">Certificates</a><a href="#contact">Contact</a><button class="btn" type="button" style="padding:6px 14px;font-size:.85rem" onclick="document.getElementById('edit').click()">Edit links</button></nav></div></header>
+<main id="main">
+<section id="home" class="hero">
+<div><p class="hi">Hello, I’m Arish.</p>
+<h1>Transforming Data Into <span class="grad">Intelligence.</span></h1>
+<p class="tag">Aspiring Data Analyst | Data Science Enthusiast.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><button class="btn" id="resume">Download Resume</button><a class="btn" href="#contact">Contact Me</a></div></div>
+<div class="orbwrap" aria-hidden="true"><div class="o"><b></b></div><div class="o"><b></b></div><div class="o"><b></b></div><div class="orb"></div>
+<span class="chip" style="top:8%;left:2%">SQL</span><span class="chip" style="top:20%;right:0;animation-delay:-1.5s">Python</span><span class="chip" style="bottom:14%;left:0;animation-delay:-3s">Power BI</span><span class="chip" style="bottom:4%;right:10%;animation-delay:-2s">ML</span></div>
+</section>
+
+<section id="about" class="rv"><h2>About me</h2>
+<div class="two"><p class="card" style="margin:0">I’m completing my B.Tech in Information Technology in 2026. I finished a Data Analytics course, where I worked with data using SQL, Excel and Power BI, and I’m now studying Data Science, including Machine Learning and Deep Learning. I also did a Data Science internship.</p>
+<div class="card"><h3 style="font-size:1.1rem;margin-bottom:10px">What I’m aiming for</h3><p style="margin:0;color:var(--mut)">Roles as a Data Analyst, SQL Developer or Junior Data Scientist, where I can turn raw data into clear answers people can act on.</p></div></div></section>
+
+<section id="skills" class="rv"><h2>Technical skills</h2><p class="sub">Hover a card, or explore how the skills connect. Levels stay hidden until you add them in the SKILLS list at the top of the script.</p>
+<div class="grid" id="skillGrid"></div><div style="margin-top:28px"><svg id="viz" viewBox="0 0 400 400" role="img" aria-label="Skill map: SQL, MySQL, Python, Excel, Power BI, Data Cleaning, EDA, Machine Learning and Deep Learning connected around Arish"></svg></div></section>
+
+<section id="projects" class="rv"><h2>Projects</h2><p style="margin:0 0 20px"><button class="btn p" type="button" onclick="document.getElementById('edit').click()">Add project details</button></p><p class="sub">Filter by type and open a project for the full breakdown. Items in dashed boxes are placeholders to fill with your real details.</p>
+<div class="chips" id="filters" role="group" aria-label="Filter projects"></div><div class="grid" id="projGrid" style="grid-template-columns:repeat(auto-fill,minmax(290px,1fr))"></div></section>
+
+<section id="dashboard" class="rv"><h2>Analytics dashboard preview</h2><p class="sub"><span class="ph">Sample data, not real results.</span> This shows the kind of dashboard I’m building toward.</p>
+<div class="dash"><div class="card kpi"><span class="meta">Total revenue</span><b class="grad">$128K</b><span class="meta">+12% vs last quarter</span></div>
+<div class="card kpi"><span class="meta">Orders</span><b class="grad">4,820</b><span class="meta">Avg. basket $26.5</span></div>
+<div class="card kpi"><span class="meta">Customer retention</span><b class="grad">71%</b><span class="meta">Repeat buyers</span></div>
+<div class="card" style="grid-column:span 2"><span class="meta">Monthly sales (sample)</span><div class="bars" role="img" aria-label="Sample bar chart of monthly sales rising through the year"><i style="--h:35%"></i><i style="--h:48%"></i><i style="--h:42%"></i><i style="--h:60%"></i><i style="--h:55%"></i><i style="--h:72%"></i><i style="--h:68%"></i><i style="--h:88%"></i></div></div>
+<div class="card"><span class="meta">Sales by region (sample)</span><svg viewBox="0 0 120 120" role="img" aria-label="Sample donut chart"><g fill="none" stroke-width="16" transform="rotate(-90 60 60)"><circle cx="60" cy="60" r="40" stroke="var(--c1)" stroke-dasharray="110 252"/><circle cx="60" cy="60" r="40" stroke="var(--c2)" stroke-dasharray="80 252" stroke-dashoffset="-110"/><circle cx="60" cy="60" r="40" stroke="var(--c3)" stroke-dasharray="61 252" stroke-dashoffset="-190"/></g></svg></div></div></section>
+
+<section id="internship" class="rv"><h2>Internship</h2><p style="margin:0 0 20px"><button class="btn p" type="button" onclick="document.getElementById('edit').click()">Add internship details</button></p>
+<div class="tl"><div class="card"><h3>Data Science Internship</h3><dl id="internDl" style="margin-top:12px"><div><dt>Company</dt><dd><span class="ph">[Company name]</span></dd></div><div><dt>Duration</dt><dd><span class="ph">[Start – End]</span></dd></div><div><dt>Responsibilities</dt><dd><span class="ph">[Add what you worked on]</span></dd></div><div><dt>Tools</dt><dd><span class="ph">[Add tools used]</span></dd></div><div><dt>Achievements</dt><dd><span class="ph">[Add real results only]</span></dd></div></dl></div></div></section>
+
+<section id="education" class="rv"><h2>Education</h2><p style="margin:0 0 20px"><button class="btn p" type="button" onclick="document.getElementById('edit').click()">Add education details</button></p>
+<div class="card" id="eduCard"><h3 style="font-size:1.25rem">B.Tech Information Technology</h3><p class="meta" style="margin:6px 0 0">Graduating 2026 · <span class="ph">[College name]</span> · <span class="ph">[CGPA]</span></p></div></section>
+
+<section id="certs" class="rv"><h2>Certifications</h2><p class="sub">Use the button below to add each certificate with its title, issuer, date, link and image.</p><p style="margin:0 0 20px"><button class="btn p" type="button" onclick="document.getElementById('edit').click()">Add certificate</button></p><div class="grid" id="certGrid"></div></section>
+
+<section id="contact" class="rv"><h2>Let’s talk about data</h2><p class="sub">I’m open to Data Analyst, SQL Developer and Junior Data Scientist roles.</p>
+<div class="btns" id="contactBtns"></div><p style="margin-top:20px"><button class="btn p" type="button" onclick="document.getElementById('edit').click()">Add my links</button></p></section>
+</main>
+<footer><span>© <span id="yr"></span> Arish. Built with curiosity and data.</span><span>Data Analytics · Data Science · SQL · <button id="edit" type="button" style="background:none;border:0;color:var(--mut);font:inherit;text-decoration:underline;cursor:pointer;padding:0">Edit links</button></span></footer>
+
+<button id="fab" aria-expanded="false" aria-controls="chat">Ask Arish</button>
+<div id="chat" role="dialog" aria-label="Ask Arish chat"><header><strong class="grad">Ask Arish</strong><button class="btn" id="x" style="padding:4px 12px">Close</button></header>
+<div class="demo">Demo mode: answers come from preset portfolio data, not a live AI.</div><div id="log" aria-live="polite"></div><div id="sug"></div>
+<form id="cf"><input id="q" aria-label="Your question" placeholder="Ask about skills, projects…" autocomplete="off"><button class="btn p" style="padding:8px 16px">Send</button></form></div>
+<dialog id="dlg" aria-labelledby="dt"><div id="dc"></div><button class="btn" id="dx" style="margin-top:18px">Close</button></dialog>
+<dialog id="edlg" aria-labelledby="et"><h3 id="et" style="font-size:1.3rem;margin-bottom:6px">Edit my links and certificates</h3>
+<p class="meta" style="margin:0 0 8px">Saved in this browser only. To show them to every visitor, press Copy settings and send the result to Claude.</p>
+<form id="lf"><label class="f">Email<input name="email" type="email" placeholder="you@example.com"></label>
+<label class="f">LinkedIn URL<input name="linkedin" placeholder="linkedin.com/in/your-name"></label>
+<label class="f">GitHub URL<input name="github" placeholder="github.com/your-name"></label>
+<label class="f">Resume link (Google Drive share link or .pdf path)<input name="resume" placeholder="https://drive.google.com/..."></label>
+<button class="btn p">Save links</button></form>
+<h3 style="font-size:1.1rem;margin:22px 0 4px">Certificates</h3>
+<form id="cfm"><label class="f">Title<input name="t" required></label><label class="f">Issuer<input name="i"></label><label class="f">Date<input name="d" placeholder="Month Year"></label><label class="f">Credential link (optional)<input name="link"></label><label class="f">Certificate image (optional)<input name="img" type="file" accept="image/*"></label><button class="btn p">Add certificate</button></form>
+<div id="cl" style="margin-top:10px"></div>
+<h3 style="font-size:1.1rem;margin:22px 0 4px">Projects</h3>
+<form id="pf"><label class="f">Choose a project<select id="ps"></select></label><div id="pfields"></div><div class="btns"><button class="btn p">Save project</button><button class="btn" type="button" id="pdel" style="display:none">Delete project</button></div></form>
+<h3 style="font-size:1.1rem;margin:22px 0 4px">Education</h3>
+<form id="edf"><label class="f">Degree<input name="degree"></label><label class="f">College or university<input name="college"></label><label class="f">Graduation year<input name="year" placeholder="2026"></label><label class="f">CGPA or percentage<input name="cgpa" placeholder="Your CGPA"></label><label class="f">Notes (coursework, projects, honours)<textarea name="notes" rows="3"></textarea></label><button class="btn p">Save education</button></form>
+<h3 style="font-size:1.1rem;margin:22px 0 4px">Internship</h3>
+<form id="inf"><label class="f">Company<input name="company"></label><label class="f">Duration<input name="duration" placeholder="Month Year – Month Year"></label><label class="f">Responsibilities<textarea name="resp" rows="3"></textarea></label><label class="f">Tools used<input name="tools" placeholder="Python, SQL, ..."></label><label class="f">Achievements<textarea name="ach" rows="3"></textarea></label><button class="btn p">Save internship</button></form>
+<textarea id="out" readonly rows="7" aria-label="Settings to copy" style="display:none;width:100%;margin-top:12px;background:var(--glass);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:8px;font:inherit"></textarea>
+<div class="btns" style="margin-top:18px"><button class="btn" id="cp" type="button">Copy settings</button><button class="btn" id="ec" type="button">Close</button></div></dialog>
+<div id="toast" role="status"></div>
+
+<script>
+// ===== EDIT YOUR CONTENT HERE =====
+const LINKS={email:"",linkedin:"",github:"",resume:""}; // e.g. email:"you@mail.com", resume:"resume.pdf"
+const SKILLS=[ // add level:"Beginner"|"Intermediate"|"Advanced" to show a level
+{n:"SQL",c:"Databases & BI"},{n:"MySQL",c:"Databases & BI"},{n:"Power BI",c:"Databases & BI"},
+{n:"Excel",c:"Analysis"},{n:"Python",c:"Analysis"},{n:"Data Cleaning",c:"Analysis"},{n:"Exploratory Data Analysis",c:"Analysis"},
+{n:"Machine Learning",c:"Data Science"},{n:"Deep Learning",c:"Data Science"}];
+const PH=t=>`<span class="ph">[${t}]</span>`;
+const PROJECTS=[
+{t:"Cyberbullying Detection in Social Media Using Machine Learning and Deep Learning",k:"Machine Learning",f:[
+["Objective","Detect cyberbullying in social media text using Machine Learning and Deep Learning models."],
+["Problem statement","Abusive messages spread quickly online, and reviewing them by hand does not scale. A model can flag harmful content automatically."],
+["Dataset",PH("Dataset name, source and size")],["Data preprocessing",PH("Cleaning, tokenization, stop-word removal, vectorization, etc.")],
+["Machine Learning techniques",PH("Algorithms you used")],["Deep Learning techniques",PH("Architectures you used")],
+["Model evaluation",PH("Accuracy / Precision / Recall / F1 from your real runs")],["Results and conclusion",PH("Your actual findings")],["GitHub",PH("Repository link")]]},
+{t:"SQL Business Data Analysis",k:"SQL",f:[["Objective",PH("What business question you answered")],["Dataset",PH("Source and schema")],["Queries and techniques",PH("Joins, window functions, CTEs, etc.")],["Key findings",PH("Real insights only")],["GitHub",PH("Repository link")]]},
+{t:"Power BI Interactive Dashboard",k:"Power BI",f:[["Objective",PH("What the dashboard helps decide")],["Dataset",PH("Source and fields")],["Visuals and DAX",PH("Charts, measures, filters")],["Key insights",PH("Real insights only")],["Dashboard link",PH("Published link or screenshot")]]}];
+// Add a certificate: {t:"Title", i:"Issuer", d:"Month Year", img:"image data URI or path", link:"https://credential-url"}
+// Each empty {} below shows a placeholder card. Replace them with your real certificates.
+let CERTS=[
+{},{},{},{},{},{}
+];
+const KB=[
+[["skill","tech","know","tools"],"Arish’s skills: SQL, MySQL, Python, Excel, Power BI, Data Cleaning, Exploratory Data Analysis, Machine Learning and Deep Learning."],
+[["project","built","work"],"Projects: Cyberbullying Detection in Social Media Using Machine Learning and Deep Learning, SQL Business Data Analysis, and a Power BI Interactive Dashboard. Open the Projects section for details."],
+[["educat","degree","college","study","btech","b.tech","graduat"],"Arish is completing a B.Tech in Information Technology in 2026."],
+[["intern","experience","company"],"Arish has done a Data Science Internship. Company and duration details are not added yet."],
+[["goal","role","job","career","hire"],"Arish is aiming for Data Analyst, SQL Developer and Junior Data Scientist roles."],
+[["learn","course","analytics","science","certif"],"Arish completed a Data Analytics course and is now learning Data Science."],
+[["contact","email","linkedin","github","resume","reach"],"Use the Contact section for email, LinkedIn, GitHub and the resume."],
+[["hello","hi","hey"],"Hi! Ask me about Arish’s skills, projects, education or career goals."]];
+// ===== END CONTENT =====
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const toast=m=>{const t=$("#toast");t.textContent=m;t.style.display="block";clearTimeout(toast.i);toast.i=setTimeout(()=>t.style.display="none",3500)};
+$("#yr").textContent=new Date().getFullYear();
+// loader
+const ld=$("#loader"),hide=()=>ld.classList.add("off");setTimeout(hide,1700);ld.onclick=hide;
+// nav
+$("#menu").onclick=e=>{const o=$("#links").classList.toggle("open");e.target.setAttribute("aria-expanded",o)};
+$$(".links a").forEach(a=>a.onclick=()=>$("#links").classList.remove("open"));
+// skills
+$("#skillGrid").innerHTML=SKILLS.map(s=>`<div class="card skill"><h3>${s.n}</h3><small>${s.c}${s.level?" · "+s.level:""}</small></div>`).join("");
+// skill map
+(()=>{const N=SKILLS.length,svg=$("#viz");let h='<defs><radialGradient id="g"><stop offset="0" stop-color="var(--c1)"/><stop offset="1" stop-color="var(--c3)"/></radialGradient></defs>';
+const pts=SKILLS.map((s,i)=>{const a=i/N*Math.PI*2-Math.PI/2;return[200+140*Math.cos(a),200+140*Math.sin(a),s]});
+pts.forEach(p=>h+=`<line x1="200" y1="200" x2="${p[0]}" y2="${p[1]}" stroke="var(--bd)"/>`);
+pts.forEach((p,i)=>{const q=pts[(i+1)%N];h+=`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="var(--c2)" stroke-opacity=".3"/>`});
+h+='<circle cx="200" cy="200" r="34" fill="url(#g)"/><text x="200" y="205" text-anchor="middle" font-family="Sora" font-weight="800" font-size="14" fill="#021024">Arish</text>';
+pts.forEach(p=>h+=`<circle cx="${p[0]}" cy="${p[1]}" r="6" fill="var(--c1)"/><text x="${p[0]}" y="${p[1]+(p[1]<200?-14:20)}" text-anchor="middle" font-size="11.5" fill="var(--tx)">${p[2].n.replace("Exploratory Data Analysis","EDA")}</text>`);
+svg.innerHTML=h})();
+// projects
+let cat="All";let cats=["All",...new Set(PROJECTS.map(p=>p.k))];
+const drawP=()=>{$("#filters").innerHTML=cats.map(c=>`<button aria-pressed="${c==cat}" data-c="${c}">${c}</button>`).join("");
+$("#projGrid").innerHTML=PROJECTS.map((p,i)=>({p,i})).filter(o=>cat=="All"||o.p.k==cat).map(o=>`<button class="card proj" data-i="${o.i}"><span class="kind">${o.p.k}</span><h3>${o.p.t}</h3><span class="meta">Open full breakdown</span></button>`).join("")};
+drawP();
+$("#filters").onclick=e=>{if(e.target.dataset.c){cat=e.target.dataset.c;drawP()}};
+$("#projGrid").onclick=e=>{const b=e.target.closest(".proj");if(!b)return;const p=PROJECTS[b.dataset.i];
+$("#dc").innerHTML=`<h3 id="dt" style="font-size:1.35rem;margin-bottom:16px">${p.t}</h3><dl>${p.f.map(f=>`<div><dt>${f[0]}</dt><dd>${f[1]}</dd></div>`).join("")}</dl>`;$("#dlg").showModal()};
+$("#dx").onclick=()=>$("#dlg").close();
+// certs
+const drawCerts=()=>$("#certGrid").innerHTML=CERTS.map((c,i)=>c.t?`<div class="card cert" style="border-style:solid;padding:14px;aspect-ratio:auto">${c.img?`<img src="${c.img}" alt="${c.t} certificate" loading="lazy" data-i="${i}" style="width:100%;border-radius:12px;cursor:zoom-in;aspect-ratio:4/3;object-fit:cover">`:""}<div style="text-align:left;margin-top:10px;width:100%"><b>${c.t}</b><br><span class="meta">${[c.i,c.d].filter(Boolean).join(" · ")}</span>${c.link?`<br><a href="${c.link}" target="_blank" rel="noopener noreferrer" style="color:var(--c1)">View credential</a>`:""}</div></div>`:`<div class="card cert"><div><b>Certificate</b><br><span class="ph">[Title · Issuer · Date]</span></div></div>`).join("");
+$("#certGrid").onclick=e=>{const m=e.target.closest("img");if(!m)return;const c=CERTS[m.dataset.i];$("#dc").innerHTML=`<h3 id="dt" style="font-size:1.2rem;margin-bottom:12px">${c.t}</h3><img src="${c.img}" alt="${c.t} certificate" style="width:100%;border-radius:12px">`;$("#dlg").showModal()};
+// contact
+const lk=(u,l,pre)=>u?`<a class="btn" href="${pre||""}${u}" ${pre?"":'target="_blank" rel="noopener noreferrer"'}>${l}</a>`:`<span class="btn" style="cursor:default" title="Add this in LINKS"><span class="ph">[Add ${l}]</span></span>`;
+const drawC=()=>{$("#contactBtns").innerHTML=lk(LINKS.email,"Email","mailto:")+lk(LINKS.linkedin,"LinkedIn")+lk(LINKS.github,"GitHub")+lk(LINKS.resume,"Resume")};
+$("#resume").onclick=()=>LINKS.resume?window.open(LINKS.resume,"_blank","noopener"):toast("Resume not added yet. Set LINKS.resume in the script.");
+// reveal + active nav
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");$$(".skill").forEach(s=>e.target.contains(s)&&s.classList.add("in"));io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach(el=>io.observe(el));
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$(".links a").forEach(a=>a.classList.toggle("act",a.hash=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+$$("section[id]").forEach(s=>so.observe(s));
+// cursor glow
+addEventListener("pointermove",e=>{const g=$("#glow");g.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;mx=e.clientX;my=e.clientY});
+// neural network
+let mx=-999,my=-999;
+(()=>{const cv=$("#bg"),x=cv.getContext("2d"),still=matchMedia("(prefers-reduced-motion:reduce)").matches;let W,H,P=[];
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const init=()=>{W=cv.width=innerWidth;H=cv.height=innerHeight;P=Array.from({length:Math.min(80,Math.floor(W/16))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))};
+const draw=()=>{x.clearRect(0,0,W,H);const c1=css("--c1")||"#22e5ff",c3=css("--c3")||"#a855f7";
+P.forEach((p,i)=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+const dx=mx-p.x,dy=my-p.y,d=Math.hypot(dx,dy);if(d<150){p.x+=dx*.004;p.y+=dy*.004}
+x.fillStyle=i%3?c1:c3;x.globalAlpha=.8;x.beginPath();x.arc(p.x,p.y,1.8,0,7);x.fill();
+for(let j=i+1;j<P.length;j++){const q=P[j],e=Math.hypot(p.x-q.x,p.y-q.y);if(e<130){x.globalAlpha=(1-e/130)*.35;x.strokeStyle=c1;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}});
+if(!still&&!document.hidden)requestAnimationFrame(draw);else if(!still)setTimeout(()=>requestAnimationFrame(draw),500)};
+init();draw();addEventListener("resize",init)})();
+// owner editor: saves links and certificates in this browser
+const EDU={degree:"B.Tech Information Technology",college:"",year:"2026",cgpa:"",notes:""},INTERN={company:"",duration:"",resp:"",tools:"",ach:""},KEY="arish-cfg",clean=s=>s.replace(/["<>]/g,"").trim(),fixU=s=>!s?"":/^(https?:\/\/|[\w\-\/.]+\.(pdf|docx?)$)/i.test(s)?s:"https://"+s,real=()=>CERTS.filter(c=>c.t);
+const mkP=()=>({t:"",k:"Other",c:true,f:[["Description",""],["Tools",""],["Link",""]],d:[PH("Add description"),PH("Add tools used"),PH("Add project link")],u:["","",""]});
+PROJECTS.forEach(p=>{p.d=p.f.map(x=>x[1]);p.u=p.f.map(()=>"")});
+const applyP=p=>p.f.forEach((x,j)=>x[1]=p.u[j]?p.u[j].replace(/\n/g,"<br>"):p.d[j]);
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s){(s.proj||[]).forEach((q,i)=>{const p=q.c?mkP():PROJECTS[i];if(!p)return;if(q.c)PROJECTS.push(p);p.t=q.t||p.t;p.k=q.k||p.k;if(q.u)p.u=q.u;applyP(p)});Object.assign(LINKS,s.links||{});Object.assign(INTERN,s.intern||{});Object.assign(EDU,s.edu||{});if(s.certs&&s.certs.length)CERTS=s.certs}}catch(e){}
+const drawI=()=>{const f=[["Company","company","Company name"],["Duration","duration","Start – End"],["Responsibilities","resp","Add what you worked on"],["Tools","tools","Add tools used"],["Achievements","ach","Add real results only"]];$("#internDl").innerHTML=f.map(([l,k,p])=>`<div><dt>${l}</dt><dd>${INTERN[k]?INTERN[k].replace(/\n/g,"<br>"):`<span class="ph">[${p}]</span>`}</dd></div>`).join("")};
+const drawE=()=>{const ph=t=>`<span class="ph">[${t}]</span>`;$("#eduCard").innerHTML=`<h3 style="font-size:1.25rem">${EDU.degree||"B.Tech Information Technology"}</h3><p class="meta" style="margin:6px 0 0">${EDU.year?"Graduating "+EDU.year:ph("Graduation year")} · ${EDU.college||ph("College name")} · ${EDU.cgpa?"CGPA "+EDU.cgpa:ph("CGPA")}</p>${EDU.notes?`<p style="margin:12px 0 0;color:var(--mut)">${EDU.notes.replace(/\n/g,"<br>")}</p>`:""}`};
+const refP=()=>{cats=["All",...new Set(PROJECTS.map(p=>p.k))];if(!cats.includes(cat))cat="All";drawP()};
+drawC();drawCerts();drawI();drawE();refP();
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify({links:LINKS,certs:real(),intern:INTERN,edu:EDU,proj:PROJECTS.map(p=>({t:p.t,k:p.k,u:p.u,c:!!p.c}))}))}catch(e){toast("Could not save. Try a smaller image.")}};
+const setCerts=r=>{CERTS=r.length?r:[{},{},{},{},{},{}];drawCerts();save()};
+const lf=$("#lf"),listC=()=>{$("#cl").innerHTML=real().map((c,i)=>`<div class="ci"><span>${c.t}</span><button class="btn" type="button" data-r="${i}" style="padding:4px 12px">Remove</button></div>`).join("")||'<span class="meta">No certificates added yet.</span>'};
+$("#edit").onclick=()=>{["email","linkedin","github","resume"].forEach(k=>lf.elements[k].value=LINKS[k]||"");["company","duration","resp","tools","ach"].forEach(k=>$("#inf").elements[k].value=INTERN[k]||"");["degree","college","year","cgpa","notes"].forEach(k=>$("#edf").elements[k].value=EDU[k]||"");fillPS("0");buildPF();listC();$("#edlg").showModal()};
+$("#ec").onclick=()=>$("#edlg").close();
+lf.onsubmit=e=>{e.preventDefault();const v=k=>clean(lf.elements[k].value);LINKS.email=v("email");["linkedin","github","resume"].forEach(k=>LINKS[k]=fixU(v(k)));drawC();save();toast("Links saved in this browser.")};
+$("#cfm").onsubmit=e=>{e.preventDefault();const f=e.target.elements,add=img=>{setCerts(real().concat({t:clean(f.t.value),i:clean(f.i.value),d:clean(f.d.value),link:fixU(clean(f.link.value)),img}));e.target.reset();listC();toast("Certificate added.")},file=f.img.files[0];
+if(!file)return add("");const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const s=Math.min(1,900/im.width),c=document.createElement("canvas");c.width=im.width*s;c.height=im.height*s;c.getContext("2d").drawImage(im,0,0,c.width,c.height);add(c.toDataURL("image/jpeg",.8))};im.onerror=()=>toast("That image could not be read.");im.src=r.result};r.readAsDataURL(file)};
+const ps=$("#ps"),pf=$("#pf"),fillPS=v=>{ps.innerHTML=PROJECTS.map((p,i)=>`<option value="${i}">${p.t.slice(0,48)}</option>`).join("")+`<option value="new">+ New project</option>`;ps.value=v};
+const buildPF=()=>{const n=ps.value=="new",p=n?mkP():PROJECTS[+ps.value];$("#pfields").innerHTML=`<label class="f">Title<input name="t" value="${n?"":p.t}"${n?" required":""}></label><label class="f">Category (used for filters)<input name="k" value="${p.k}"></label>`+p.f.map((x,j)=>`<label class="f">${x[0]}<textarea name="u${j}" rows="2" placeholder="${p.d[j].replace(/<[^>]+>/g,"")}">${p.u[j]||""}</textarea></label>`).join("");$("#pdel").style.display=n||!p.c?"none":"inline-block"};
+ps.onchange=buildPF;
+pf.onsubmit=e=>{e.preventDefault();const f=pf.elements;let p;if(ps.value=="new"){p=mkP();PROJECTS.push(p)}else p=PROJECTS[+ps.value];const t=clean(f.t.value);if(t)p.t=t;p.k=clean(f.k.value)||p.k;p.u=p.f.map((x,j)=>clean(f["u"+j].value));applyP(p);refP();save();fillPS(String(PROJECTS.indexOf(p)));buildPF();toast("Project saved in this browser.")};
+$("#pdel").onclick=()=>{const p=PROJECTS[+ps.value];if(!p||!p.c)return;PROJECTS.splice(+ps.value,1);refP();save();fillPS("0");buildPF();toast("Project deleted.")};
+$("#edf").onsubmit=e=>{e.preventDefault();["degree","college","year","cgpa","notes"].forEach(k=>EDU[k]=clean($("#edf").elements[k].value));drawE();save();toast("Education saved in this browser.")};
+$("#inf").onsubmit=e=>{e.preventDefault();["company","duration","resp","tools","ach"].forEach(k=>INTERN[k]=clean($("#inf").elements[k].value));drawI();save();toast("Internship saved in this browser.")};
+$("#cl").onclick=e=>{const r=e.target.dataset.r;if(r===undefined)return;const a=real();a.splice(+r,1);setCerts(a);listC()};
+$("#cp").onclick=()=>{const o=$("#out");o.value=JSON.stringify({links:LINKS,projects:PROJECTS.map(p=>({title:p.t,category:p.k,custom:!!p.c,fields:p.f.map((x,j)=>[x[0],p.u[j]||""])})),education:EDU,internship:INTERN,certificates:real().map(({img,...c})=>({...c,hasImage:!!img}))},null,1);o.style.display="block";o.select();try{navigator.clipboard.writeText(o.value)}catch(e){}};
+// chatbot (demo)
+const log=$("#log"),add=(t,w)=>{const d=document.createElement("div");d.className="m "+w;d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight};
+const ans=q=>{q=q.toLowerCase();const m=KB.find(k=>k[0].some(w=>q.includes(w)));return m?m[1]:"I don’t have verified information on that yet. Please use the Contact section to ask Arish directly."};
+add("Hi, I’m the Ask Arish demo. I answer only from the verified details on this page. Try a question below.","b");
+$("#sug").innerHTML=["What skills do you have?","Tell me about your projects","What are your career goals?"].map(s=>`<button type="button">${s}</button>`).join("");
+const send=q=>{if(!q.trim())return;add(q,"u");setTimeout(()=>add(ans(q),"b"),350)};
+$("#sug").onclick=e=>e.target.tagName=="BUTTON"&&send(e.target.textContent);
+$("#cf").onsubmit=e=>{e.preventDefault();send($("#q").value);$("#q").value=""};
+const tg=o=>{$("#chat").classList.toggle("open",o);$("#fab").setAttribute("aria-expanded",o)};
+$("#fab").onclick=()=>tg(!$("#chat").classList.contains("open"));$("#x").onclick=()=>tg(false);
+addEventListener("keydown",e=>e.key=="Escape"&&tg(false));
+</script>
+</body>
+</html>
